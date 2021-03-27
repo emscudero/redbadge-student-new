@@ -33,10 +33,12 @@ const FunctionFetchOnload = (props) => {
   }
 
   useEffect(() => {
+    //similar to componentdidmount
     fetchBlogData();
   }, []);
   return (
-    <Container>
+  
+    <Container> 
       <h3>From the Function</h3>
       {displayBlogPosts()}
     </Container>
