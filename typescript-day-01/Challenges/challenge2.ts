@@ -1,7 +1,8 @@
 // PROBLEM 2
 
-function convertToDegreeCelcus(temps: number[]) {
-  return temps.map((singleTemp) => Math.floor(((+singleTemp - 32) * 5) / 9));
+function convertToDegreeCelcus(temps: string[]) {
+  return temps.map((singleTemp) =>
+   Math.floor(((+singleTemp - 32) * 5) / 9));
 }
 
 const dailyTemps = ["93", "78", "88"];

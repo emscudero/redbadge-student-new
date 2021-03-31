@@ -1,0 +1,40 @@
+"use strict";
+let number1;
+let name1;
+let stringExample;
+let boolExample;
+let numberExample;
+let unionStringNumber;
+unionStringNumber = 5;
+unionStringNumber = "5";
+stringExample = "Hello";
+//stringExample = 4;//doesnt work
+//Type Inference 
+let number2 = 5;
+////number2 = "five";//doesnt work
+let restaurant = {
+    name: "McDonalds",
+    dineIn: false,
+    foodItems: ["hamburgers", "fries", "apple pie"]
+};
+restaurant.foodItems.forEach((item) => {
+    console.log(item.toUpperCase());
+});
+function buySellStock(stockName, quanity, action) {
+    let total = Number(quanity) * 15;
+    let status = action === "sell-stock" ? "sold" :
+        "bought";
+    return `You just ${status} ${quanity} of ${stockName} for a total of $${total}.`;
+}
+buySellStock("Bank of America", 15, "sell-stock");
+let weather = {
+    temp: 55,
+    cloudCondition: "sunny"
+};
+console.log(weather.temp);
+/*let weather = {
+    temp: 78,
+    cloudCondition: 'overcast',
+    next5dayTemps: [81, 74, 79, 81, 81]
+};
+*/ 

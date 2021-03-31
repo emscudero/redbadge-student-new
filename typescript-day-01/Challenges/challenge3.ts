@@ -7,11 +7,11 @@ interface IStateInitials {
     florida: string,
  }
  
- let StateInitials: IStateInitials = {
+ let StateInitials: IStateInitials  = {
    alabama: "AL",
    alaska: "AK",
    arizona: "AZ",
    indiana: "IN",
-   florida: "FL"
+   florida: "FL",
    newjersey: "NJ"
  }
